@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "escola-api",
   "version": "1.0.0",
   "description": "API NODEJS + EXPRESS com CRUD",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/slothandre/escola-api/issues"
   },
-  "homepage": "https://github.com/slothandre/escola-api#readme"
+  "homepage": "https://github.com/slothandre/escola-api#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
