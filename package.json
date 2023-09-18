@@ -1,0 +1,19 @@
+{
+  "name": "escola-api",
+  "version": "1.0.0",
+  "description": "API NODEJS + EXPRESS com CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slothandre/escola-api.git"
+  },
+  "author": "A turma toda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slothandre/escola-api/issues"
+  },
+  "homepage": "https://github.com/slothandre/escola-api#readme"
+}
