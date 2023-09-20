@@ -1,6 +1,13 @@
 import express from "express";
+import { ler, inserir } from "./src/aluno.js"
 const app = express();
 const porta = 8080;
+
+// adicionando suporte ao formato json
+app.use(express.json());
+
+// adicionando suporte a dados vindos de formulários
+app.use(express.urlencoded({ extended : true}))
 
 // CRIANDO AS ROTAS
 
@@ -10,7 +17,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/alunos', (req, res) => {
-    res.send(`Visualizar alunos`);
+    // res.send(`Visualizar alunos`);
+    ler(res);
 });
 
 app.get('/alunos/:id', (req, res) => {
@@ -18,7 +26,9 @@ app.get('/alunos/:id', (req, res) => {
 });
 
 app.post('/alunos', (req, res) => {
-    res.send(`Inserir alunos`);
+    // res.send(`Inserir alunos`);
+    const novoAluno = req.body;
+    inserir(novoAluno, res);
 });
 
 app.patch('/alunos/:id', (req, res) => {
