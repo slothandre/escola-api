@@ -13,7 +13,8 @@ app.use(express.urlencoded({ extended : true}))
 
 // Raiz da aplicação
 app.get('/', (req, res) => {
-    res.send(`Página inicial`);
+    // res.send(`Página inicial`);
+    res.redirect(`https://documenter.getpostman.com/view/29885683/2s9YJZ34YK`);
 });
 
 app.get('/alunos', (req, res) => {
